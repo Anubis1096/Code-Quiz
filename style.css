@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 940px;
+    background-color: white;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 350px;
+    padding: 80px 9px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.leftSide,
+.rightSide {
+    width: 50%;
+}
+
+.leftSide img {
+    height: 300px;
+    width: 300px;
+}
+
+.rightSide {
+    padding-right: 20px;
+}
+
+.rightSide p {
+    font-size: large;
+    margin: 20px auto 10px;
+}
+
+.startButton {
+    background-color: skyblue;
+    border-radius: 100px;
+    color: black;
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    padding: 15px 0;
+    margin-top: 25px;
+}
+
+.startButton:hover {
+    border-color: crimson;
+}
+
+.hide {
+    display: none;
+}
+/* ////////////////////// */
+/* CSS for Questions.html */
+/* ////////////////////// */
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 350px;
+    width: 640px;
+    padding: 50px;
+}
+
+.title {
+    border-bottom: 1px solid gray;
+    color: black;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreBox,
+.timerBox {
+    border-radius: 100px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.questionBox {
+    background-color: lightgreen;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+
+.optionBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+}
+
+.optionBox span {
+    background-color: lightblue;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid gray;
+    padding: 10px 15px;
+}
+
+.optionBox span:hover {
+    border-color: crimson;
+}
+
+.scoreBox {
+    background-color: skyblue;
+    border-radius: 100px;
+    color: black;
+}
+
+.scoreBox:hover {
+    border-color: crimson;
+}
+
+/* ////////////////////// */
+/* CSS for Results        */
+/* ////////////////////// */
+
+.resultBox {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    font-size: 20px;
+}
+
+.resultBox *:nth-child(odd) {
+    text-align: right;
+}
+
+.resultBox span {
+    font-weight: 600;
+}
+
+.buttonBox {
+    border-top: 1px solid gray;
+    padding-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.startOver {
+    background-color: skyblue;
+    border-radius: 50px;
+    border: 0;
+    color: black;
+    border: 1px solid gray;
+    padding: 7px 15px;
+}
+
+.startOver:hover {
+    border-color: crimson;
+}
+
+.record {
+    border-radius: 100px;
+    padding: 10px 15px;
+    background-color: skyblue;
+    border: 1px solid gray;
+    color: black;
+}
+
+.record:hover {
+    border-color: crimson;
+}
+
+/* ////////////////////// */
+/* Media Query            */
+/* ////////////////////// */
+@media screen and (max-width:768px) {
+    .leftSide{
+        display: none;
+    }
+    .container,
+    .box {
+        width: 425px;
+    }
+    .rightSide{
+        width: 100%;    
+    }
+    .optionBox{
+        grid-template-columns: 1fr;
+    }
+}

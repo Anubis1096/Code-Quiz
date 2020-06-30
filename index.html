@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainScreen"> 
+        <div class="leftSide">
+            <img src="images/javascript_logo.png" alt="JS logo">
+        </div>
+
+        <div class="rightSide">
+            <p>
+            Hello, and welcome to the JavScript mini quiz.
+            You will have 15 seconds to answer each question.
+            A correct answer will earn you points, while an incorrect answer will deduct time from the timer. 
+            Have fun!
+            </p>
+
+            <button class="startButton" id="start-button">Click to start the quiz</button>
+
+        </div>
+    </div>
+
+<!-- Div for questions     -->
+    <div class="box hide" id="questionScreen">
+        <div class="title">
+            JavaScript Quiz
+        </div>
+
+        <div class="header">
+            <button class="scoreBox" id="leaderBoardButton">Leader Board</button>
+            <div class="timerBox">Time Remaining: <span id="timeLeft"></span></div>
+        </div>
+
+        <div class="questionBox" id="questionTitle">
+            Question
+        </div>
+
+        <div class="optionBox">
+            <span id="choiceA" class="answerButton">Answer 1</span>
+            <span id="choiceB" class="answerButton">Answer 2</span>
+            <span id="choiceC" class="answerButton">Answer 3</span>
+            <span id="choiceD" class="answerButton">Answer 4</span>
+            <p id="checkAnswer"></p>
+        </div>
+    </div>
+
+<!-- Div for results     -->
+    <div class="box hide" id="resultScreen">
+        <div class="title">
+        JavaScript Quiz Results
+        </div>
+
+        <div class="header">
+            <button class="scoreBox" id="leaderBoardButton">Leader Board</button>
+        </div>
+    
+        <div class="resultBox">
+            <label>Questions : </label>
+            <span id="totalQuestions"> 6</span>
+            <label>Correct : </label>
+            <span id="correctQuestions"></span>
+            <label>Score : </label>
+            <span id="finalScore"></span>
+        </div>
+
+        <div class="buttonBox">
+            <form id="userInput" method="POST">
+                <label>Enter your initials for the leader board.</label>
+                <input type="text" placeholder="Enter initials here" id="enterUserName">
+            </form>
+            <button class="record" id="RecordScoreButton">Record Your Score</button>
+        </div>
+
+    </div>
+    
+<!-- Div for high scores     -->
+
+    <div class="box hide" id="highScores">
+        <div class="title">
+            Leader Board
+        </div>
+
+        <div class="resultBox">
+            <ul id="displayUserInitials"></ul>
+        </div>
+
+        <div class="buttonBox">
+            <button class="startOver" id="restartButton">Start Over</button>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
