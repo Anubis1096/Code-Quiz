@@ -23,8 +23,8 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-## Link to deployed application: 
-
+## Link to deployed application (presently incomplete): 
+https://anubis1096.github.io/Code-Quiz/
 
 ## Screenshots of application:
 ![image1](https://user-images.githubusercontent.com/65513935/86182841-8d5a3d80-bae5-11ea-9736-56b497f8cdb0.JPG)
