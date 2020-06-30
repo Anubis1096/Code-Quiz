@@ -28,3 +28,5 @@ THEN I can save my initials and score
 
 ## Screenshots of application:
 ![image1](https://user-images.githubusercontent.com/65513935/86182841-8d5a3d80-bae5-11ea-9736-56b497f8cdb0.JPG)
+
+![image2](https://user-images.githubusercontent.com/65513935/86182963-d1e5d900-bae5-11ea-987d-fbcd60086515.JPG)
